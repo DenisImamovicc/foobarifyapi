@@ -9,7 +9,7 @@ const port = 4000
 let SentFileContent
 
 app.use(cors({
-  origin: allowedserver
+  origin: "*"
 }));
 
 const storage = multer.diskStorage({
