@@ -8,9 +8,7 @@ const custom = require("./customFuncs.js")
 const port = 4000
 let SentFileContent
 
-app.use(cors({
-  origin: "*"
-}));
+app.use(cors())
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
